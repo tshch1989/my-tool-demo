@@ -1,0 +1,17 @@
+identity:
+  author: lucky
+  name: my-tool-demo
+  label:
+    en_US: my-tool-demo
+    zh_Hans: my-tool-demo
+    pt_BR: my-tool-demo
+  description:
+    en_US: my tool demo
+    zh_Hans: my tool demo
+    pt_BR: my tool demo
+  icon: icon.svg
+tools:
+  - tools/my-tool-demo.yaml
+extra:
+  python:
+    source: provider/my-tool-demo.py

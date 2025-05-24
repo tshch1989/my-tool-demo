@@ -1,0 +1,30 @@
+identity:
+  name: my-tool-demo
+  author: lucky
+  label:
+    en_US: my-tool-demo
+    zh_Hans: my-tool-demo
+    pt_BR: my-tool-demo
+description:
+  human:
+    en_US: my tool demo
+    zh_Hans: my tool demo
+    pt_BR: my tool demo
+  llm: my tool demo
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: my tool demo
+      zh_Hans: my tool demo
+      pt_BR: my tool demo
+    llm_description: my tool demo
+    form: llm
+extra:
+  python:
+    source: tools/my-tool-demo.py

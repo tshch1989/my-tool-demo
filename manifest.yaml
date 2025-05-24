@@ -1,0 +1,48 @@
+version: 0.0.1
+type: plugin
+author: lucky
+name: my-tool-demo
+label:
+  en_US: my-tool-demo
+  ja_JP: my-tool-demo
+  zh_Hans: my-tool-demo
+  pt_BR: my-tool-demo
+description:
+  en_US: my tool demo
+  ja_JP: my tool demo
+  zh_Hans: my tool demo
+  pt_BR: my tool demo
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/my-tool-demo.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-05-24T15:20:51.211862+08:00
+privacy: PRIVACY.md
+verified: false
